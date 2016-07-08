@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+		<VideoView
+		    android:id="@+id/video_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_play"
+            android:visibility="visible"/>
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_pause_circle_outline_white"
+            android:visibility="invisible"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_video_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_media_control_anchor_4_0"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_media_controller_anchor"
+            android:layout_width="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
